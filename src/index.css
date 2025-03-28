@@ -119,10 +119,10 @@ header {
   width: 100vw;
   position: fixed;
   z-index: 1000;
-  transition: 0.6s;
+  transition: all 0.3s ease-in-out;
 }
 
-header.sticky {
+.sticky {
   background: var(--primary-text-color);
 }
 

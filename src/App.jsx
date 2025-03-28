@@ -14,7 +14,7 @@ function App() {
       </section>
       <div>
         {data.map((item) => (
-          <Article cardTitle={item.cardTitle} borderColor={item.borderColor} />
+          <Article cardTitle={item.cardTitle} borderColor={item.borderColor} imgUrl={item.imgUrl} />
         ))}
       </div>
       <ExpertiseContainer />
