@@ -64,6 +64,9 @@
     height: 40px;
     background-color: gray;
     border-radius: 5px;
+    background-image: url('https://demo.rivaxstudio.com/syron/main/wp-content/uploads/2024/09/664564563-440x440.webp');
+    background-size: cover;
+    background-position: center;
 }
 
 .footer-bottom {
