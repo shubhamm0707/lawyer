@@ -281,24 +281,6 @@ will start immediately after the top of the page, effectively appearing behind t
   font-size: calc(2.4 * var(--vw));
 }
 
-/* Footer */
-
-footer {
-  width: 100%;
-  height: calc(40 * var(--vh));
-  background: linear-gradient(to right, var(--primary-text-color), #011223);
-  border-radius: 125px 0 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.footer-content {
-  font-size: 30px;
-  color: white;
-}
 
 
 
@@ -328,6 +310,19 @@ footer {
   width: 100%;
   height: 10vh;
   background-color: red;
+}
+
+
+.mT3 {
+  margin-top: 3vh;
+}
+
+.mT2 {
+  margin-top: 2vh;
+}
+
+.mT1 {
+  margin-top: 1vh;
 }
 
 /*  */
