@@ -3,12 +3,12 @@ import "./Footer.css";
 
 const Footer = () => {
     return (
-        <footer className="footer container">
-            <div className="footer-container">
-                <div className="footer-left">
-                    <h2 className="logo">Mahima</h2>
-                    <p className="mT1">We create digital experiences for brands and companies by using technology.</p>
-                    <div className="social-icons">
+        <footer className="bg-[#005380] text-white px-[10%] mx-auto">
+            <div className="flex justify-between flex-wrap mx-auto">
+                <div className="w-full">
+                    <h2 className="logo text-xl text-center my-5">Mahima Chaudhary</h2>
+                    <p className="mT1 text-center">We create digital experiences for brands and companies by using technology.</p>
+                    <div className="flex justify-evenly mt-5">
                         <span>🔵</span>
                         <span>🐦</span>
                         <span>📷</span>
@@ -16,37 +16,8 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="footer-links">
-                    <div>
-                        <h4 >Company</h4>
-                        <ul className="mT2">
-                            <li>About company</li>
-                            <li>Company services</li>
-                            <li>Job opportunities</li>
-                            <li>Creative people</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Customer</h4>
-                        <ul className="mT2">
-                            <li>Client support</li>
-                            <li>Latest news</li>
-                            <li>Company story</li>
-                            <li>Pricing packages</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Additional</h4>
-                        <ul className="mT2">
-                            <li>Our story</li>
-                            <li>Who we are</li>
-                            <li>Our process</li>
-                            <li>Latest news</li>
-                        </ul>
-                    </div>
-                </div>
 
-                <div className="footer-blog">
+                <div className="footer-blog mt-5">
                     <h4>Latest Blog</h4>
                     <div className="blog-item mT2">
                         <div className="blog-thumbnail"></div>
@@ -59,7 +30,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="footer-bottom">
+            <div className="footer-bottom text-[12px]">
                 <p>Privacy policy | Legal notice | Terms of service</p>
                 <p>© 2025 TailGrids</p>
             </div>

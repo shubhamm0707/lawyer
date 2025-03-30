@@ -1,8 +1,17 @@
 
 import { useEffect, useState } from "react";
+import { RiMenu3Line } from "react-icons/ri";
+import { ImCross } from "react-icons/im";
+
+
 
 function Header() {
     const [isSticky, setIsSticky] = useState(false);
+    const [isOpen, setOpen] = useState(false);
+
+    const OpenMenu = () => {
+        setOpen(!isOpen);
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,17 +27,26 @@ function Header() {
     }, []);
 
     return (
-        <header className={isSticky ? "sticky" : ""}>
-            <div className="container flex header-container">
-                <a href="#" className="logo">Mahima Chaudhary</a>
-                <ul className="flex">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Expertise</a></li>
-                    <li><a href="#">Insights & Updates</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact Me</a></li>
+        <header className={isSticky ? "" : ""}>
+            <div className="flex header-container bg-orange-500">
+                <a href="#" className="logo p-4 text-[18px] font-[Roboto]">Mahima Chaudhary</a>
+
+                <ul className={`w-full h-[35vh]bg - slate - 400 top - 0 ${isOpen ? 'flex' : 'hidden'} flex - col items - center justify - evenly gap - 0 absolute`}>
+                    <li><a className="text-[20px]" href="#">Home</a></li>
+                    <li><a className="text-[20px]" href="#">Expertise</a></li>
+                    <li><a className="text-[20px]" href="#">Insights & Updates</a></li>
+                    <li><a className="text-[20px]" href="#">Resources</a></li>
+                    <li><a className="text-[20px]" href="#">About</a></li>
+                    <li><a className="text-[20px]" href="#">Contact Me</a></li>
                 </ul>
+
+                <button onClick={OpenMenu} className="text-white p-4">
+                    <RiMenu3Line />
+                </button>
+
+                <button onClick={OpenMenu} className={` ${isOpen ? 'block' : 'hidden'} text - white relative p - 4 `}>
+                    <ImCross />
+                </button>
             </div>
         </header>
     );
