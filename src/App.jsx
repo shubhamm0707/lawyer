@@ -26,7 +26,6 @@ function App() {
 
   return (
     <div>
-      <Header />
       <Banner />
       <section className="about flex">
         <h1>BLOGS AND INSIGHTS</h1>

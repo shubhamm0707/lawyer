@@ -5,7 +5,7 @@ import { ImCross } from "react-icons/im";
 
 
 
-function Header() {
+function Header({ isMenuOpen }) {
     const [isSticky, setIsSticky] = useState(false);
     const [isOpen, setOpen] = useState(false);
 
@@ -27,8 +27,8 @@ function Header() {
     }, []);
 
     return (
-        <header className={isSticky ? "" : ""}>
-            <div className="flex header-container bg-orange-500">
+        <header className={isMenuOpen ? "hidden" : ""}>
+            <div className="flex header-container">
                 <a href="#" className="logo p-4 text-[18px] font-[Roboto]">Mahima Chaudhary</a>
 
                 <ul className={`w-full h-[35vh]bg - slate - 400 top - 0 ${isOpen ? 'flex' : 'hidden'} flex - col items - center justify - evenly gap - 0 absolute`}>
@@ -40,7 +40,7 @@ function Header() {
                     <li><a className="text-[20px]" href="#">Contact Me</a></li>
                 </ul>
 
-                <button onClick={OpenMenu} className="text-white p-4">
+                <button onClick={OpenMenu} className="text-white p-4 hidden">
                     <RiMenu3Line />
                 </button>
 
