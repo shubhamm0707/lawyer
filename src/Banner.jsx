@@ -16,7 +16,7 @@ function Banner() {
     return <>
         <div className="relative">
             <div className={`w-[80vw] h-[100vh] transition-all duration-500 ease-in-out bg-orange-500 
-                            absolute top-0 ${isOpen ? 'left-[20vw]' : 'left-[96vw]'} 
+                            absolute top-0 ${isOpen ? 'right-[0vw]' : 'right-[-76vw]'} 
                             flex items-start justify-center z-[9999]`}>
 
                 <div className="absolute mt-20 left-[-40px] z-[-10]">
@@ -25,10 +25,10 @@ function Banner() {
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center justify-center gap-6 mt-10">
+                <div className="flex flex-col items-center justify-center gap-6 mt-10 w-full">
                     <h1 className="text-white text-[24px] font-bold">Mahima Chaudhary</h1>
 
-                    <div className="flex flex-col justify-center gap-6 w-80 mt-10 text-white">
+                    <div className="flex flex-col justify-center gap-6 w-[80%] mt-10 text-white">
                         <button className="neuromorphic-btn">HOME</button>
                         <button className="neuromorphic-btn">ABOUT ME</button>
                         <button className="neuromorphic-btn">SERVICES</button>
@@ -39,6 +39,9 @@ function Banner() {
 
             </div>
         </div>
+
+
+
         <section className="banner flex flex-col justify-start">
 
             <Header isMenuOpen={isOpen} />
