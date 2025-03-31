@@ -16,12 +16,16 @@ function Banner() {
     return <>
         <div className="relative">
             <div className={`w-[80vw] h-[100vh] transition-all duration-500 ease-in-out bg-orange-500 
-                            absolute top-0 ${isOpen ? 'right-[0vw]' : 'right-[-76vw]'} 
+                            absolute top-0 ${isOpen ? 'right-[0vw]' : 'right-[-80vw]'} 
                             flex items-start justify-center z-[9999]`}>
 
-                <div className="absolute mt-20 left-[-40px] z-[-10]">
-                    <div className="w-40 h-40 bg-orange-500 text-white pl-5 text-2xl rounded-full flex items-center justify-start cursor-pointer">
-                        <RiMenu3Line onClick={OpenMenu} />
+                <div className="absolute mt-20 z-[-10] left-0">
+                    <div className="w-40 h-40 text-white text-2xl rounded-full flex cursor-pointer">
+                        <div className="relative w-full h-full bg-orange-500">
+
+                            <img src={process.env.PUBLIC_URL + "/hinge.png"} alt="Profile Picture" className="w-full h-full relative left-[-50%] filter-color-orange-500 object-cover rotate-[-90deg]" />
+                        </div>
+                        <RiMenu3Line className="relative left-[-100%]" onClick={OpenMenu} />
                     </div>
                 </div>
 
